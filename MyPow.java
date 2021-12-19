@@ -10,9 +10,7 @@ class MyPow {
             a = myPow(x, n/2);
             return a*a;
         }
-        else {
-            return x * myPow(x, n - 1);
-        }
+        else return x * myPow(x, n - 1);
     }
     public void test1(){                                                       
         double x = 2.0;
@@ -25,7 +23,6 @@ class MyPow {
         double x = 2.00000;
         int n = -2;
         double a = myPow(x,n);
-        // System.out.println(a);
         assert(a == .25000);
     } 
     public void test3(){                                                       
